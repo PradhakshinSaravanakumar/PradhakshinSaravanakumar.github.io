@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, darkblue, midnightblue);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px lightgray;
+}
+
+section h2 {
+  color: darkblue;
+  margin-bottom: 15px;
+  border-bottom: 2px solid lightblue;
+  padding-bottom: 5px;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+}
+
+#skills li {
+  background-color: aliceblue;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: ghostwhite;
+  border-left: 5px solid darkblue;
+  border-radius: 6px;
+}
+
+#contact p {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to right, darkblue, midnightblue);
+  color: white;
+  padding: 40px 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.header-text h1 {
+  font-size: 36px;
+}
+
+.header-text p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
